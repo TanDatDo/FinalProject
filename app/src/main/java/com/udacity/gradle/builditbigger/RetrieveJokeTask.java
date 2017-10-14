@@ -36,7 +36,6 @@ public class RetrieveJokeTask extends AsyncTask<Pair<Context, String>, Void, Str
                     // - 10.0.2.2 is localhost's IP address in Android emulator
                     // - turn off compression when running against local devappserver
                     .setRootUrl("https://build-it-bigger-182707.appspot.com/_ah/api/")
-                    //85.76.7.112
                     .setApplicationName("Build It Bigger")
                     .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                         @Override

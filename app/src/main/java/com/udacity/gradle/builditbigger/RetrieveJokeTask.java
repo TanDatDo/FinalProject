@@ -34,8 +34,9 @@ public class RetrieveJokeTask extends AsyncTask<Pair<Context, String>, Void, Str
                     new AndroidJsonFactory(), null)
                     // options for running against local devappserver
                     // - 10.0.2.2 is localhost's IP address in Android emulator
+//
                     // - turn off compression when running against local devappserver
-                    .setRootUrl("https://build-it-bigger-182707.appspot.com/_ah/api/")
+                    .setRootUrl("http://10.0.2.2:8080/_ah/api/")
                     .setApplicationName("Build It Bigger")
                     .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                         @Override
